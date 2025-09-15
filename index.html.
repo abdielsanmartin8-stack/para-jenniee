@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Jennie</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 60px;
+      font-size: 2em;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      animation: fadeIn 4s ease-in-out;
+    }
+
+    .stars {
+      width: 2px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    .shooting-star {
+      position: absolute;
+      width: 2px;
+      height: 100px;
+      background: white;
+      transform: rotate(45deg);
+      animation: shoot 6s infinite ease-in-out;
+    }
+
+    @keyframes shoot {
+      0% { top: -100px; left: 100%; opacity: 0; }
+      10% { opacity: 1; }
+      100% { top: 100%; left: -100px; opacity: 0; }
+    }
+
+    .flowers {
+      width: 300px;
+      margin: 0 auto;
+      animation: fadeIn 5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Te quiero mucho Jennie</h1>
+  <h2>Esto lo hice para ti</h2>
+
+  <!-- Estrellas -->
+  <div class="stars" style="top: 20%; left: 30%;"></div>
+  <div class="stars" style="top: 40%; left: 70%;"></div>
+  <div class="stars" style="top: 60%; left: 50%;"></div>
+
+  <!-- Estrellas fugaces -->
+  <div class="shooting-star" style="top: 0; left: 80%;"></div>
+  <div class="shooting-star" style="top: 0; left: 40%; animation-delay: 3s;"></div>
+
+  <!-- Imagen del ramo de lirios rojos -->
+  <img class="flowers" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Lilium_bulbiferum_-_red_lily.jpg/800px-Lilium_bulbiferum_-_red_lily.jpg" alt="Ramo de lirios rojos">
+</body>
+</html>
